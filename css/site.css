@@ -1,8 +1,8 @@
 .jumbotron {
-    height: 80vh;
     margin-top: 10vh;
     margin-bottom: 10vh;
     background-color: #856c8b;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px black, 0 6px 20px 0 rgba(0, 0, 0, 0.50);
 }
 
 .text-narc-pale {
@@ -12,3 +12,13 @@
 .text-narc-light {
     color: #faf2f2;
 }
+
+h1 {
+    font-size: 5.9vw;
+  }
+  h2 {
+    font-size: 3.0vh;
+  }
+  p {
+    font-size: 2vmin;
+  }
