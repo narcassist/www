@@ -2,4 +2,13 @@
     height: 80vh;
     margin-top: 10vh;
     margin-bottom: 10vh;
+    background-color: #856c8b;
+}
+
+.text-narc-pale {
+    color: #d9cbcb;
+}
+
+.text-narc-light {
+    color: #faf2f2;
 }
