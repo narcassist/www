@@ -21,7 +21,7 @@
         var s = num+"";
         while (s.length < size) s = "0" + s;
         return s;
-    }
+    };
     var loadQuestionProcess = function() {
         shuffle(questionIndexes);
         document.getElementById("buttonStartQuestions").addEventListener("click", nextQuestion);
