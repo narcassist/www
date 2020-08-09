@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>  
   <link rel="stylesheet" href="css/site.css">
   <title>NarcAssist Group</title>
 </head>
@@ -25,15 +26,208 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
+  <script type="JavaScript" src="js/animate.js"></script>
+  <script type="JavaScript" src="js/questions.js"></script>
   <div class="container">
     <div class="row">
-      <div class="col-12 vh-100">
+      <div class="col-12">
         <div class="jumbotron align-middle">
-          <h1 class="display-4" style="font-family: 'Love Ya Like A Sister', cursive;">
+          <h1 class="display-4">
             <span class="text-narc-pale">Narc</span><span class="text-narc-light">Assist</span><span
               class="text-narc-pale">.group</span>
           </h1>
           <p class="lead text-narc-light">A community to support those that have suffered from narcissistic abuse.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 text-center">
+        <button type="button" class="btn btn-primary">I think I'm dealing with a narcissist...</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div id="question01" class="card d-none">
+          <div class="card-body rounded">
+            <div class="card-question rounded">
+              <h4 class="mb-0 text-narc-light">Question</h4>
+            </div>
+            <p class="card-text text-center">Are they often grandios or an have an elevated
+              sense of importance?</p>
+            <div class="card-options rounded">
+              <button type="button" class="btn btn-success">Yes</button>
+              <button type="button" class="btn btn-danger">No</button>
+            </div>
+          </div>
+        </div>
+        <div id="question02" class="card d-none">
+          <div class="card-body rounded">
+            <div class="card-question rounded">
+              <h4 class="mb-0 text-narc-light">Question</h4>
+            </div>
+            <p class="card-text text-center">Are they arrogant, and must always be
+              right, while also being critical of others?</p>
+            <div class="card-options rounded">
+              <button type="button" class="btn btn-success">Yes</button>
+              <button type="button" class="btn btn-danger">No</button>
+            </div>
+          </div>
+        </div>
+        <div id="question03" class="card d-none">
+          <div class="card-body rounded">
+            <div class="card-question rounded">
+              <h4 class="mb-0 text-narc-light">Question</h4>
+            </div>
+            <p class="card-text text-center">Are they unable to give comfort or show their own vulnerability?</p>
+            <div class="card-options rounded">
+              <button type="button" class="btn btn-success">Yes</button>
+              <button type="button" class="btn btn-danger">No</button>
+            </div>
+          </div>
+        </div>
+        <div id="question04" class="card d-none">
+          <div class="card-body rounded">
+            <div class="card-question rounded">
+              <h4 class="mb-0 text-narc-light">Question</h4>
+            </div>
+            <p class="card-text text-center">Are they civil in public, yet are crude and lack manners at home?</p>
+            <div class="card-options rounded">
+              <button type="button" class="btn btn-success">Yes</button>
+              <button type="button" class="btn btn-danger">No</button>
+            </div>
+          </div>
+        </div>
+        <div id="question05" class="card d-none">
+          <div class="card-body rounded">
+            <div class="card-question rounded">
+              <h4 class="mb-0 text-narc-light">Question</h4>
+            </div>
+            <p class="card-text text-center">Do they often tell you things are different than they actually are, leaving you questioning yourself?</p>
+            <div class="card-options rounded">
+              <button type="button" class="btn btn-success">Yes</button>
+              <button type="button" class="btn btn-danger">No</button>
+            </div>
+          </div>
+        </div>
+        <div id="question06" class="card d-none">
+          <div class="card-body rounded">
+            <div class="card-question rounded">
+              <h4 class="mb-0 text-narc-light">Question</h4>
+            </div>
+            <p class="card-text text-center">Do you wonder if they just see others as just objects instead of actual people?</p>
+            <div class="card-options rounded">
+              <button type="button" class="btn btn-success">Yes</button>
+              <button type="button" class="btn btn-danger">No</button>
+            </div>
+          </div>
+        </div>
+        <div id="question07" class="card d-none">
+          <div class="card-body rounded">
+            <div class="card-question rounded">
+              <h4 class="mb-0 text-narc-light">Question</h4>
+            </div>
+            <p class="card-text text-center">Do they always blame others for all the problems that occur?</p>
+            <div class="card-options rounded">
+              <button type="button" class="btn btn-success">Yes</button>
+              <button type="button" class="btn btn-danger">No</button>
+            </div>
+          </div>
+        </div>
+        <div id="question08" class="card d-none">
+          <div class="card-body rounded">
+            <div class="card-question rounded">
+              <h4 class="mb-0 text-narc-light">Question</h4>
+            </div>
+            <p class="card-text text-center">Are they always concerned that someone is out to get them or take advantage of them?</p>
+            <div class="card-options rounded">
+              <button type="button" class="btn btn-success">Yes</button>
+              <button type="button" class="btn btn-danger">No</button>
+            </div>
+          </div>
+        </div>
+        <div id="question09" class="card d-none">
+          <div class="card-body rounded">
+            <div class="card-question rounded">
+              <h4 class="mb-0 text-narc-light">Question</h4>
+            </div>
+            <p class="card-text text-center">Do they often bully, demean, belittle, or take advantage of others?</p>
+            <div class="card-options rounded">
+              <button type="button" class="btn btn-success">Yes</button>
+              <button type="button" class="btn btn-danger">No</button>
+            </div>
+          </div>
+        </div>
+        <div id="question10" class="card d-none">
+          <div class="card-body rounded">
+            <div class="card-question rounded">
+              <h4 class="mb-0 text-narc-light">Question</h4>
+            </div>
+            <p class="card-text text-center">Do they often fantasize that they are more powerful, famous, or wealthy than they are?</p>
+            <div class="card-options rounded">
+              <button type="button" class="btn btn-success">Yes</button>
+              <button type="button" class="btn btn-danger">No</button>
+            </div>
+          </div>
+        </div>
+        <div id="question11" class="card d-none">
+          <div class="card-body rounded">
+            <div class="card-question rounded">
+              <h4 class="mb-0 text-narc-light">Question</h4>
+            </div>
+            <p class="card-text text-center">Do they often have mood swings and unpredictable rages?</p>
+            <div class="card-options rounded">
+              <button type="button" class="btn btn-success">Yes</button>
+              <button type="button" class="btn btn-danger">No</button>
+            </div>
+          </div>
+        </div>
+        <div id="question12" class="card d-none">
+          <div class="card-body rounded">
+            <div class="card-question rounded">
+              <h4 class="mb-0 text-narc-light">Question</h4>
+            </div>
+            <p class="card-text text-center">Do they often disrespect others and overstep typical social boundaries?</p>
+            <div class="card-options rounded">
+              <button type="button" class="btn btn-success">Yes</button>
+              <button type="button" class="btn btn-danger">No</button>
+            </div>
+          </div>
+        </div>
+        <div id="question13" class="card d-none">
+          <div class="card-body rounded">
+            <div class="card-question rounded">
+              <h4 class="mb-0 text-narc-light">Question</h4>
+            </div>
+            <p class="card-text text-center">Do they display entitlement to things, as if everything belongs to them, and don't respect others possessions?</p>
+            <div class="card-options rounded">
+              <button type="button" class="btn btn-success">Yes</button>
+              <button type="button" class="btn btn-danger">No</button>
+            </div>
+          </div>
+        </div>
+        <div id="question14" class="card d-none">
+          <div class="card-body rounded">
+            <div class="card-question rounded">
+              <h4 class="mb-0 text-narc-light">Question</h4>
+            </div>
+            <p class="card-text text-center">Are they constantly seeking praise and admiration from others?</p>
+            <div class="card-options rounded">
+              <button type="button" class="btn btn-success">Yes</button>
+              <button type="button" class="btn btn-danger">No</button>
+            </div>
+          </div>
+        </div>
+        <div id="question15" class="card d-none">
+          <div class="card-body rounded">
+            <div class="card-question rounded">
+              <h4 class="mb-0 text-narc-light">Question</h4>
+            </div>
+            <p class="card-text text-center">Do they lack shame and exploit others for their own personal gain?</p>
+            <div class="card-options rounded">
+              <button type="button" class="btn btn-success">Yes</button>
+              <button type="button" class="btn btn-danger">No</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>

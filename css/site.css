@@ -14,11 +14,34 @@
 }
 
 h1 {
-    font-size: 5.9vw;
-  }
-  h2 {
-    font-size: 3.0vh;
-  }
-  p {
-    font-size: 2vmin;
-  }
+    font-size: 5.9vw !important;
+    font-family: 'Love Ya Like A Sister', cursive;
+}
+
+.card-body {
+    position: relative;
+    background-color: #faf2f2;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px black, 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+}
+
+.card-question {
+    position: absolute;
+    top: -30px;
+    left: -15px; 
+    padding: 5px;
+    background-color: #856c8b;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px black, 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+}
+
+.card-question > h2, .card-question > h3, .card-question > h4, .card-question > h5, .card-question > h6 {
+    font-weight: bold;
+}
+
+.card-options {
+    position: absolute;
+    bottom: -35px;
+    right: -15px; 
+    padding: 10px;
+    background-color: #d9cbcb;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px black, 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+}
