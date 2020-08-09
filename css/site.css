@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: #d4ebd0;
+    background-color: #faf2f2;
 }
 
 .jumbotron {
@@ -29,7 +29,7 @@ h1 {
 
 .card-body {
     position: relative;
-    background-color: #faf2f2;
+    background-color: #ffeb99;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
 }
 
@@ -50,6 +50,10 @@ h1 {
     position: absolute;
     bottom: -25px;
     right: -15px; 
+}
+
+.progress {
+    background-color: #856c8b;
 }
 
 .btn {
@@ -75,6 +79,14 @@ h1 {
     color: #004100!important;
     background-color: #C1FFDE!important;
     border-color: #004100!important;
+}
+
+.bg-yes {
+    background-color: #C1FFDE!important;
+}
+
+.bg-no {
+    background-color: #FF9BAB!important;
 }
 
 .btn-no {
