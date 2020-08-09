@@ -26,8 +26,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
-  <script type="JavaScript" src="js/animate.js"></script>
-  <script type="JavaScript" src="js/questions.js"></script>
+  <script type="text/javascript" src="js/animate.js"></script>
+  <script type="text/javascript" src="js/questions.js"></script>
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -42,7 +42,7 @@
     </div>
     <div class="row">
       <div class="col-12 text-center">
-        <button type="button" class="btn btn-primary">I think I'm dealing with a narcissist...</button>
+        <button id="buttonStartQuestions" type="button" class="btn btn-primary">I think I'm dealing with a narcissist...</button>
       </div>
     </div>
     <div class="row">
@@ -55,8 +55,8 @@
             <p class="card-text text-center">Are they often grandios or an have an elevated
               sense of importance?</p>
             <div class="card-options rounded">
-              <button type="button" class="btn btn-success">Yes</button>
-              <button type="button" class="btn btn-danger">No</button>
+              <button type="button" class="btn btn-success response-yes">Yes</button>
+              <button type="button" class="btn btn-danger response-no">No</button>
             </div>
           </div>
         </div>
@@ -68,8 +68,8 @@
             <p class="card-text text-center">Are they arrogant, and must always be
               right, while also being critical of others?</p>
             <div class="card-options rounded">
-              <button type="button" class="btn btn-success">Yes</button>
-              <button type="button" class="btn btn-danger">No</button>
+              <button type="button" class="btn btn-success response-yes">Yes</button>
+              <button type="button" class="btn btn-danger response-no">No</button>
             </div>
           </div>
         </div>
@@ -80,8 +80,8 @@
             </div>
             <p class="card-text text-center">Are they unable to give comfort or show their own vulnerability?</p>
             <div class="card-options rounded">
-              <button type="button" class="btn btn-success">Yes</button>
-              <button type="button" class="btn btn-danger">No</button>
+              <button type="button" class="btn btn-success response-yes">Yes</button>
+              <button type="button" class="btn btn-danger response-no">No</button>
             </div>
           </div>
         </div>
@@ -92,8 +92,8 @@
             </div>
             <p class="card-text text-center">Are they civil in public, yet are crude and lack manners at home?</p>
             <div class="card-options rounded">
-              <button type="button" class="btn btn-success">Yes</button>
-              <button type="button" class="btn btn-danger">No</button>
+              <button type="button" class="btn btn-success response-yes">Yes</button>
+              <button type="button" class="btn btn-danger response-no">No</button>
             </div>
           </div>
         </div>
@@ -104,8 +104,8 @@
             </div>
             <p class="card-text text-center">Do they often tell you things are different than they actually are, leaving you questioning yourself?</p>
             <div class="card-options rounded">
-              <button type="button" class="btn btn-success">Yes</button>
-              <button type="button" class="btn btn-danger">No</button>
+              <button type="button" class="btn btn-success response-yes">Yes</button>
+              <button type="button" class="btn btn-danger response-no">No</button>
             </div>
           </div>
         </div>
@@ -116,8 +116,8 @@
             </div>
             <p class="card-text text-center">Do you wonder if they just see others as just objects instead of actual people?</p>
             <div class="card-options rounded">
-              <button type="button" class="btn btn-success">Yes</button>
-              <button type="button" class="btn btn-danger">No</button>
+              <button type="button" class="btn btn-success response-yes">Yes</button>
+              <button type="button" class="btn btn-danger response-no">No</button>
             </div>
           </div>
         </div>
@@ -128,8 +128,8 @@
             </div>
             <p class="card-text text-center">Do they always blame others for all the problems that occur?</p>
             <div class="card-options rounded">
-              <button type="button" class="btn btn-success">Yes</button>
-              <button type="button" class="btn btn-danger">No</button>
+              <button type="button" class="btn btn-success response-yes">Yes</button>
+              <button type="button" class="btn btn-danger response-no">No</button>
             </div>
           </div>
         </div>
@@ -140,8 +140,8 @@
             </div>
             <p class="card-text text-center">Are they always concerned that someone is out to get them or take advantage of them?</p>
             <div class="card-options rounded">
-              <button type="button" class="btn btn-success">Yes</button>
-              <button type="button" class="btn btn-danger">No</button>
+              <button type="button" class="btn btn-success response-yes">Yes</button>
+              <button type="button" class="btn btn-danger response-no">No</button>
             </div>
           </div>
         </div>
@@ -152,8 +152,8 @@
             </div>
             <p class="card-text text-center">Do they often bully, demean, belittle, or take advantage of others?</p>
             <div class="card-options rounded">
-              <button type="button" class="btn btn-success">Yes</button>
-              <button type="button" class="btn btn-danger">No</button>
+              <button type="button" class="btn btn-success response-yes">Yes</button>
+              <button type="button" class="btn btn-danger response-no">No</button>
             </div>
           </div>
         </div>
@@ -164,8 +164,8 @@
             </div>
             <p class="card-text text-center">Do they often fantasize that they are more powerful, famous, or wealthy than they are?</p>
             <div class="card-options rounded">
-              <button type="button" class="btn btn-success">Yes</button>
-              <button type="button" class="btn btn-danger">No</button>
+              <button type="button" class="btn btn-success response-yes">Yes</button>
+              <button type="button" class="btn btn-danger response-no">No</button>
             </div>
           </div>
         </div>
@@ -176,8 +176,8 @@
             </div>
             <p class="card-text text-center">Do they often have mood swings and unpredictable rages?</p>
             <div class="card-options rounded">
-              <button type="button" class="btn btn-success">Yes</button>
-              <button type="button" class="btn btn-danger">No</button>
+              <button type="button" class="btn btn-success response-yes">Yes</button>
+              <button type="button" class="btn btn-danger response-no">No</button>
             </div>
           </div>
         </div>
@@ -188,8 +188,8 @@
             </div>
             <p class="card-text text-center">Do they often disrespect others and overstep typical social boundaries?</p>
             <div class="card-options rounded">
-              <button type="button" class="btn btn-success">Yes</button>
-              <button type="button" class="btn btn-danger">No</button>
+              <button type="button" class="btn btn-success response-yes">Yes</button>
+              <button type="button" class="btn btn-danger response-no">No</button>
             </div>
           </div>
         </div>
@@ -200,8 +200,8 @@
             </div>
             <p class="card-text text-center">Do they display entitlement to things, as if everything belongs to them, and don't respect others possessions?</p>
             <div class="card-options rounded">
-              <button type="button" class="btn btn-success">Yes</button>
-              <button type="button" class="btn btn-danger">No</button>
+              <button type="button" class="btn btn-success response-yes">Yes</button>
+              <button type="button" class="btn btn-danger response-no">No</button>
             </div>
           </div>
         </div>
@@ -212,8 +212,8 @@
             </div>
             <p class="card-text text-center">Are they constantly seeking praise and admiration from others?</p>
             <div class="card-options rounded">
-              <button type="button" class="btn btn-success">Yes</button>
-              <button type="button" class="btn btn-danger">No</button>
+              <button type="button" class="btn btn-success response-yes">Yes</button>
+              <button type="button" class="btn btn-danger response-no">No</button>
             </div>
           </div>
         </div>
@@ -224,8 +224,23 @@
             </div>
             <p class="card-text text-center">Do they lack shame and exploit others for their own personal gain?</p>
             <div class="card-options rounded">
-              <button type="button" class="btn btn-success">Yes</button>
-              <button type="button" class="btn btn-danger">No</button>
+              <button type="button" class="btn btn-success response-yes">Yes</button>
+              <button type="button" class="btn btn-danger response-no">No</button>
+            </div>
+          </div>
+        </div>
+        <div id="yesResponse" class="card d-none">
+          <div class="card-body rounded">
+            <p class="card-text">You've already identified six traits of a narcissist!  You are probably feeling exhausted, anxious, over-whelmed, and isolated as a result of the draining nature of your narcissist.  <strong>You are not alone.</strong>  We are a support group based out of Ottawa, Ontario, focused on the healing from narcissistic abuse.  What we do:</p>
+            <ul>
+              <li>Provide a community forum</li>
+              <li>Host in-person meet-ups</li>
+              <li>Participate in online chats</li>
+              <li>Focus on healing and empowering</li>
+            </ul>
+            <p class="card-text">If you would like to connect with us, please visit our forum and say hi!</p>
+            <div class="card-options rounded">
+              <a href="https://forum.narcassist.group" class="btn btn-primary">NarcAssist Group Forum</a>
             </div>
           </div>
         </div>
