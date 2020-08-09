@@ -1,6 +1,10 @@
 :root {
     --animate-duration: 0.5s;
-  }
+}
+
+body {
+    background-color: #d4ebd0;
+}
 
 .jumbotron {
     position: relative;
@@ -61,6 +65,10 @@ h1 {
     color: #0B2C2D!important;
     background-color: #a4c5c6!important;
     border-color: #0B2C2D!important;
+}
+
+.border-card {
+    border-color: #484040!important;    
 }
 
 .btn-yes {
