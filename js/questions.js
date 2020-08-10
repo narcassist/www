@@ -23,16 +23,24 @@
         return s;
     };
     var updateProgress = function() {
-        var yesPercentage = Math.floor((questionYesCount / questionIndexes.length) * 100);
-        var noPercentage = Math.floor((questionNoCount / questionIndexes.length) * 100);
+        var yesPercentage = Math.round((questionYesCount / questionIndexes.length) * 100);
+        var noPercentage = Math.round((questionNoCount / questionIndexes.length) * 100);
         var yesBar = document.getElementById("progressYes");
         yesBar.setAttribute("aria-valuenow", yesPercentage.toString());
         yesBar.style.width = yesPercentage.toString() + "%";
         var noBar = document.getElementById("progressNo");
         noBar.setAttribute("aria-valuenow", noPercentage.toString());
         noBar.style.width = noPercentage.toString() + "%";
+        var spans = document.getElementsByClassName("count-yes");
+        for (var i = 0, ilen = spans.length; i < ilen; i++) {
+            spans[i].textContent = questionYesCount;
+        }
     };
     var startQuestions = function() {
+        var spans = document.getElementsByClassName("count-total");
+        for (var i = 0, ilen = spans.length; i < ilen; i++) {
+            spans[i].textContent = questionIndexes.length;
+        }
         document.getElementById("progress").classList.remove('d-none');
         animateCSS("#progress", "fadeIn").then((message) => {
 
@@ -56,22 +64,22 @@
         updateProgress();
         animateCSS("#question" + pad(questionIndexes[questionIndex], 2), "fadeOut").then((message) => {
             document.getElementById("question" + pad(questionIndexes[questionIndex], 2)).classList.add('d-none');
-            if (questionYesCount === 6) {
-                document.getElementById("yesResponse").classList.remove('d-none');
-                animateCSS("#yesResponse", "fadeIn").then((message) => {
-
-                });
-            } else {
-                questionIndex++;
-                if (questionIndex >= 15) {
+            questionIndex++;
+            if (questionIndex >= 15) {
+                if (questionYesCount >= 6) {
+                    document.getElementById("yesResponse").classList.remove('d-none');
+                    animateCSS("#yesResponse", "fadeIn").then((message) => {
+    
+                    });
+                } else { 
                     document.getElementById("noResponse").classList.remove('d-none');
                     animateCSS("#noResponse", "fadeIn").then((message) => {
-    
-                    });                    
-                } else {
-                    nextQuestion();
-                } 
-            };           
+
+                    }); 
+                };                   
+            } else {
+                nextQuestion();
+            } 
         });
     };        
     var noAnswer = function() {
@@ -81,13 +89,20 @@
             document.getElementById("question" + pad(questionIndexes[questionIndex], 2)).classList.add('d-none');
             questionIndex++;
             if (questionIndex >= 15) {
-                document.getElementById("noResponse").classList.remove('d-none');
-                animateCSS("#noResponse", "fadeIn").then((message) => {
+                if (questionYesCount >= 6) {
+                    document.getElementById("yesResponse").classList.remove('d-none');
+                    animateCSS("#yesResponse", "fadeIn").then((message) => {
+    
+                    });
+                } else { 
+                    document.getElementById("noResponse").classList.remove('d-none');
+                    animateCSS("#noResponse", "fadeIn").then((message) => {
 
-                });                    
+                    }); 
+                };                   
             } else {
                 nextQuestion();
-            }            
+            }
         });
     };        
     var nextQuestion = function() {
